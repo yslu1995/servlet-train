@@ -5,7 +5,7 @@
   Time: 16:59
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>SetCookie</title>
@@ -15,7 +15,7 @@
          pageEncoding="UTF-8" import="javax.servlet.http.Cookie"%>
 
 <%
-    Cookie c = new Cookie("name", "Gareen");
+    Cookie c = new Cookie("qq", "469899431");
     c.setMaxAge(60 * 24 * 60);
     c.setPath("/");
     response.addCookie(c);

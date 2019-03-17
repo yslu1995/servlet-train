@@ -1,24 +1,20 @@
-<%@ page import="java.util.Date" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Administrator
-  Date: 2019/3/9
-  Time: 16:02
+  Date: 2019/3/17
+  Time: 9:24
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>JSP</title>
+    <title>setSession</title>
 </head>
 <body>
-你好 JSP
+<%
+    session.setAttribute("name", "teemo");
+%>
 
-<br>
-
-<%=new Date()%>
-<%--指令--%>
-<%@include file="footer.jsp" %>
-<%--动作--%>
-<%--<jsp:include page="footer.jsp" />--%>
+<a href="getSession.jsp">跳转到获取session的页面</a>
 </body>
 </html>

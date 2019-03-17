@@ -23,7 +23,7 @@ public class firstFilter implements Filter{
             throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) res;
-
+//        request.setCharacterEncoding("UTF-8");
         String ip = request.getRemoteAddr();
         String url = request.getRequestURL().toString();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -36,6 +36,6 @@ public class firstFilter implements Filter{
 
     @Override
     public void init(FilterConfig arg0) throws ServletException {
-
+        System.out.println("Filter 已经启动！");
     }
 }
