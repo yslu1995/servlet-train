@@ -8,6 +8,7 @@
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>main.HelloServlet</servlet-class>
         <!--自启动 取值范围是1-99 如果有多个Servlet都配置了自动启动，数字越小，启动的优先级越高-->
+        <!--web项目初始化的时候会启动该service 跑init初始化代码-->
         <load-on-startup>10</load-on-startup>
     </servlet>
 

@@ -12,10 +12,14 @@ import java.io.IOException;
  * @Date: 2019/3/9 10:41
  */
 public class LoginServlet extends HttpServlet {
+    /**
+     * 证明servlet被实例化后是单例的
+     */
     public LoginServlet() {
         System.out.println("LoginServlet 构造方法 被调用");
     }
 
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 //        request.setCharacterEncoding("UTF-8");

@@ -18,10 +18,12 @@ import java.util.Date;
 public class HelloServlet extends HttpServlet {
     private Logger logger = LoggerFactory.getLogger(HelloServlet.class);
 
+    @Override
     public void init(ServletConfig config) {
         System.out.println("Servlet 自启动成功！");
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
         try {
             response.setDateHeader("Expires", 0);
